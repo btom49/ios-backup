@@ -108,7 +108,7 @@ def main(args=None):
                 print(e)
                 print(file_from, file=fails)
 
-            print('{:.2%} of {}, {}'.format(i/count, count, file_to), end='\r')
+            print('{:.2%} of {}, {}'.format(i/count, count, file_to.encode('utf-8')), end='\r')
             i += 1
         print('Done')
         print('Be sure to check fails.txt')
